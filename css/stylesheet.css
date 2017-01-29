@@ -1,0 +1,46 @@
+
+/*dining-background styling */
+.container {
+  height: 100%;
+  width: 100%;
+}
+.header {
+  height: 10%;
+}
+.left {
+  font-size: 1.5em;
+  margin-left: 2em;
+}
+.right {
+  margin-right: 5em;
+}
+.dining-background {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  height: 40%
+}
+.info {
+  height: 100%;
+}
+.row {
+  margin-bottom: 0;
+}
+.landing-p {
+  font-size: 12px;
+}
+.hero-text {
+
+}
+.misc {
+  height: 10%;
+}
+.copy-write {
+  height: 10%;
+}
+
+.footer-name {
+  font-size: 18px;
+}
+.footer-tagline{
+  font-size: 12px;
+}
