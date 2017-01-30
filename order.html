@@ -96,21 +96,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="order-row">
                             <td></td>
-                            <td class="right"></td>
+                            <td class="price-element right"></td>
                         </tr>
-                        <tr>
+                        <tr class="order-row">
                             <td></td>
-                            <td class="right"></td>
+                            <td class="price-element right"></td>
                         </tr>
-                        <tr>
+                        <tr class="order-row">
                             <td></td>
-                            <td class="right"></td>
+                            <td class="price-element right"></td>
                         </tr>
-                        <tr>
+                        <tr class="order-row">
                             <td></td>
-                            <td class="right"></td>
+                            <td class="price-element right"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -121,15 +121,15 @@
                             <tbody>
                                 <tr>
                                     <td class="right">Subtotal</td>
-                                    <td>00.00</td>
+                                    <td id="subtotal">00.00</td>
                                 </tr>
                                 <tr>
                                     <td class="right">Tax</td>
-                                    <td>00.00</td>
+                                    <td id="tax">00.00</td>
                                 </tr>
                                 <tr>
                                     <td class="right">Total</td>
-                                    <td>00.00</td>
+                                    <td id="total">00.00</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -150,7 +150,7 @@
                     </div>
                     <div class="row">
                         <div class="col s4 offset-s4">
-                            <button class="btn center-align" type="submit" name="action">Submit</button>
+                            <button id="order" class="btn center-align" type="submit" name="action">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -181,6 +181,9 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 </body>
