@@ -43,7 +43,7 @@ function findItemRow(item){
 function orderItem(actionItem){
   let item = actionItem.path[1].parentElement.querySelector("h6").innerText;
   let itemPrice = parseFloat(actionItem.path[1].parentElement.querySelector("p").innerText, 10);
-  containsItem = checkTableContainsItem(item);
+  let containsItem = checkTableContainsItem(item);
   //add a new item to the grid if it isn't there yet
   if (containsItem === false) {
     let emptyRow = getEmptyRow();
@@ -56,17 +56,27 @@ function orderItem(actionItem){
     itemRow.children[1].innerText = (parseFloat(itemRow.children[1].innerText, 10) + itemPrice).toFixed(2);
   }
   subtotal += itemPrice;
-  console.log(subtotal);
   //update the subtotal, tax and total
   document.getElementById("subtotal").innerText = subtotal.toFixed(2);
   document.getElementById("tax").innerText = (subtotal/10).toFixed(2);
   document.getElementById("total").innerText = (subtotal + subtotal/10).toFixed(2);
 }
 
-//sets up the buttons
+//sets up the addToOrder buttons
 function setEventListeners(){
   let cardActions = document.getElementsByClassName('card-action');
   for (var i = 0; i < cardActions.length; i++) {
     cardActions[i].addEventListener('click', orderItem);
+  }
+  document.getElementById('order').addEventListener('click', toastFunction);
+}
+
+function toastFunction(evt){
+  evt.preventDefault();
+  if (subtotal === 0) {
+    Materialize.toast('Order some food!!!!', 4000);
+  }
+  else {
+    Materialize.toast('Your Order will arrive in approximately one year, thankyou Goodbye', 4000);
   }
 }
