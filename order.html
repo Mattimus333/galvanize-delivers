@@ -22,141 +22,139 @@
         </nav>
     </header>
     <!--  Our Container for the Two Columns, Menu and Ordering-->
-    <!-- <div class="container"> -->
-        <div class="row">
-            <div class="col s4 offset-s2">
-                <h3>Menu</h3>
+    <div class="row">
+        <div class="col s4 offset-s2">
+            <h3>Menu</h3>
+        </div>
+        <div class="col s3">
+            <h3>Order</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s2 offset-s2">
+            <div class="card small">
+                <div class="card-image">
+                    <img src="img/burger.jpg" alt="a big tasty burger">
+                </div>
+                <div class="card-content">
+                    <h6>Burger and Fries</h6>
+                    <p>8.99</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" class="red-text">ADD TO ORDER</a>
+                </div>
             </div>
-            <div class="col s3">
-                <h3>Order</h3>
+
+            <div class="card small">
+                <div class="card-image">
+                    <img src="img/ribs.jpg" alt="some tasty ribs">
+                </div>
+                <div class="card-content">
+                    <h6>Glazed Ribs</h6>
+                    <p>14.99</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" class="red-text">ADD TO ORDER</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col s2">
+            <div class="card small">
+                <div class="card-image">
+                    <img src="img/ice_cream.jpg" alt="icecream">
+                </div>
+                <div class="card-content">
+                    <h6>Ice Cream Sandwich</h6>
+                    <p>4.99</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" class="red-text">ADD TO ORDER</a>
+                </div>
+            </div>
+
+            <div class="card small">
+                <div class="card-image">
+                    <img src="img/pizza.jpg" alt="an arrugala pizza">
+                </div>
+                <div class="card-content">
+                    <h6>Arrugala Pizza</h6>
+                    <p>11.99</p>
+                </div>
+                <div class="card-action">
+                    <a href="#" class="red-text">ADD TO ORDER</a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col s2 offset-s2">
-                <div class="card small">
-                    <div class="card-image">
-                        <img src="img/burger.jpg" alt="a big tasty burger">
-                    </div>
-                    <div class="card-content">
-                        <h6>Burger and Fries</h6>
-                        <p>8.99</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="red-text">ADD TO ORDER</a>
-                    </div>
-                </div>
-
-                <div class="card small">
-                    <div class="card-image">
-                        <img src="img/ribs.jpg" alt="some tasty ribs">
-                    </div>
-                    <div class="card-content">
-                        <h6>Glazed Ribs</h6>
-                        <p>14.99</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="red-text">ADD TO ORDER</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col s2">
-                <div class="card small">
-                    <div class="card-image">
-                        <img src="img/ice_cream.jpg" alt="icecream">
-                    </div>
-                    <div class="card-content">
-                        <h6>Ice Cream Sandwich</h6>
-                        <p>4.99</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="red-text">ADD TO ORDER</a>
-                    </div>
-                </div>
-
-                <div class="card small">
-                    <div class="card-image">
-                        <img src="img/pizza.jpg" alt="an arrugala pizza">
-                    </div>
-                    <div class="card-content">
-                        <h6>Arrugala Pizza</h6>
-                        <p>11.99</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="red-text">ADD TO ORDER</a>
-                    </div>
+        <div class="col s4">
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th datafield="Item">Item</th>
+                        <th datafield="Price" class="right">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="order-row">
+                        <td></td>
+                        <td class="price-element right"></td>
+                    </tr>
+                    <tr class="order-row">
+                        <td></td>
+                        <td class="price-element right"></td>
+                    </tr>
+                    <tr class="order-row">
+                        <td></td>
+                        <td class="price-element right"></td>
+                    </tr>
+                    <tr class="order-row">
+                        <td></td>
+                        <td class="price-element right"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="row">
+                <div class="col s2 offset-s6">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="right">Subtotal</td>
+                                <td id="subtotal">00.00</td>
+                            </tr>
+                            <tr>
+                                <td class="right">Tax</td>
+                                <td id="tax">00.00</td>
+                            </tr>
+                            <tr>
+                                <td class="right">Total</td>
+                                <td id="total">00.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="col s4">
-                <table class="striped">
-                    <thead>
-                        <tr>
-                            <th datafield="Item">Item</th>
-                            <th datafield="Price" class="right">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="order-row">
-                            <td></td>
-                            <td class="price-element right"></td>
-                        </tr>
-                        <tr class="order-row">
-                            <td></td>
-                            <td class="price-element right"></td>
-                        </tr>
-                        <tr class="order-row">
-                            <td></td>
-                            <td class="price-element right"></td>
-                        </tr>
-                        <tr class="order-row">
-                            <td></td>
-                            <td class="price-element right"></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br>
+            <form class="" action="index.html" method="post">
+                <div class="input-field">
+                    <i class="material-icons red-text prefix">account_circle</i>
+                    <input placeholder="Name" id="name" type="text" class="validate">
+                </div>
+                <div class="input-field">
+                    <i class="material-icons red-text prefix">phone</i>
+                    <input placeholder="Phone #" id="phone" type="tel" class="validate">
+                </div>
+                <div class="input-field">
+                    <i class="material-icons red-text prefix">domain</i>
+                    <input placeholder="Address" id="address" type="text" class="validate">
+                </div>
                 <div class="row">
-                    <div class="col s2 offset-s6">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td class="right">Subtotal</td>
-                                    <td id="subtotal">00.00</td>
-                                </tr>
-                                <tr>
-                                    <td class="right">Tax</td>
-                                    <td id="tax">00.00</td>
-                                </tr>
-                                <tr>
-                                    <td class="right">Total</td>
-                                    <td id="total">00.00</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="col s4 offset-s4">
+                        <button id="order" class="btn center-align" type="submit" name="action">Submit</button>
                     </div>
                 </div>
-                <form class="" action="index.html" method="post">
-                    <div class="input-field">
-                        <i class="material-icons red-text prefix">account_circle</i>
-                        <input placeholder="Name" id="name" type="text" class="validate">
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons red-text prefix">phone</i>
-                        <input placeholder="Phone #" id="phone" type="tel" class="validate">
-                    </div>
-                    <div class="input-field">
-                        <i class="material-icons red-text prefix">domain</i>
-                        <input placeholder="Address" id="address" type="text" class="validate">
-                    </div>
-                    <div class="row">
-                        <div class="col s4 offset-s4">
-                            <button id="order" class="btn center-align" type="submit" name="action">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            </form>
         </div>
-    <!-- </div> -->
+    </div>
     <!--The Footer Section!  Same as the other page-->
     <footer>
         <div class="name-tagline blue">
@@ -182,7 +180,6 @@
         </div>
     </footer>
     <script type="text/javascript" src="js/script.js">
-
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
