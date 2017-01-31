@@ -3,7 +3,8 @@ Matt M
 My javascript file for the ordering page
 */
 
-let subtotal = 0;
+let subtotal = 0; //the subtotal!
+let cardActions = document.getElementsByClassName('card-action'); //an array of the card section for eventListenr
 setEventListeners();
 
 //Finds the first empty row in the order table and returns it
@@ -64,7 +65,6 @@ function orderItem(actionItem){
 
 //sets up the addToOrder buttons
 function setEventListeners(){
-  let cardActions = document.getElementsByClassName('card-action');
   for (var i = 0; i < cardActions.length; i++) {
     cardActions[i].addEventListener('click', orderItem);
   }
